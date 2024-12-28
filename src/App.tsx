@@ -157,7 +157,7 @@ function App() {
               <div
                 key={index}
                 onClick={() => handleQnoClick(index)}
-                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm border border-red-500
+                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm 
 
                ${
                  index === state.currentQuestionIndex
