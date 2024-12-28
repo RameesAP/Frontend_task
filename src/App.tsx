@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { fetchQuizQuestions } from "./api/apiServices";
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 export interface QuizState {
   currentQuestionIndex: number;
