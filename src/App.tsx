@@ -64,7 +64,8 @@ function App() {
           : Math.max(prev.currentQuestionIndex - 1, 0),
       showExplanation: false, // Reset explanation visibility on navigation
     }));
-  };
+  }; 
+ // cd
   const handleQnoClick=(index:number)=>{
     setState((prev) => ({
       ...prev,
