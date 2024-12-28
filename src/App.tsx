@@ -65,6 +65,12 @@ function App() {
       showExplanation: false, // Reset explanation visibility on navigation
     }));
   };
+  const handleQnoClick=(index:number)=>{
+    setState((prev) => ({
+      ...prev,
+      currentQuestionIndex:index,
+    }));
+  }
 
   return (
     <>
@@ -148,7 +154,8 @@ function App() {
             {data.data.map((_, index: number) => (
               <div
                 key={index}
-                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm
+                // onClick={handleQnoClick(index)}
+                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm border border-red-500
                 ${
                   index === state.currentQuestionIndex
                     ? "bg-red-500 text-white"
